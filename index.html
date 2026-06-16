@@ -40,8 +40,9 @@
   header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(255,255,255,.95);border-bottom:2px solid var(--blue);box-shadow:0 2px 16px rgba(25,66,199,.07)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
   .logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:16px;letter-spacing:.01em;color:var(--ink)}
-  .logo .logo-mark{width:38px;height:38px;display:block;object-fit:contain}
-  .hero-logo{display:block;width:172px;height:172px;margin:0 0 18px;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(25,66,199,.38))}
+  .logo .logo-mark{width:40px;height:40px;display:block;object-fit:contain;background:#05070e;border-radius:9px;padding:3px;border:1px solid var(--blue)}
+  .hero-logo-frame{display:inline-block;margin:0 0 20px;padding:14px;border-radius:22px;background:radial-gradient(120% 120% at 50% 30%,#0a1430,#05070e);border:1.5px solid var(--blue);box-shadow:0 14px 40px rgba(25,66,199,.30),inset 0 0 30px rgba(59,106,232,.20)}
+  .hero-logo{display:block;width:160px;height:160px;object-fit:contain}
   .logo small{display:block;font-size:10px;letter-spacing:.18em;color:var(--mut2);font-weight:500}
   .nav-cta{background:var(--blue);color:#fff;font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:999px;white-space:nowrap;box-shadow:0 4px 14px rgba(25,66,199,.28)}
 
@@ -164,7 +165,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <img class="hero-logo" src="haofeng-logo.png" alt="浩峰精緻居家鍍膜 logo">
+    <span class="hero-logo-frame"><img class="hero-logo" src="haofeng-logo.png" alt="浩峰精緻居家鍍膜 logo"></span>
     <h1>讓專業<span class="hl">進你家門</span>，<br>是一件可以很<span class="hl">安心</span>的事。</h1>
     <p class="sub">到府專業居家鍍膜 — 不用出門，玻璃、衛浴、廚房、石材，交給帶著原廠認證材料上門的人。施工前先報價，做完有保固。</p>
     <div class="btns">
