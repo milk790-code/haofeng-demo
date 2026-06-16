@@ -10,11 +10,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F5F8FF;
-    --bg2:#EEF3FB;
+    --bg:#FFFFFF;
+    --bg2:#FFFFFF;
     --surf:#FFFFFF;
-    --surf2:#E8EFFE;
-    --line:#C5D4EE;
+    --surf2:#EEF3FE;
+    --line:#D8E2F2;
     --ink:#0D1B3E;
     --mut:#4A5E84;
     --mut2:#7A90B8;
@@ -24,11 +24,11 @@
     --accent:#1245C0;
     --gold:#B87C14;
     --shadow:0 8px 32px rgba(25,66,199,.13);
-    --shadow2:0 2px 8px rgba(25,66,199,.09);
+    --shadow2:0 2px 8px rgba(25,66,199,.07);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:"Noto Sans TC",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body{font-family:"Noto Sans TC",system-ui,-apple-system,sans-serif;background:#fff;color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:880px;margin:0 auto;padding:0 22px}
   section{padding:64px 0}
@@ -37,7 +37,7 @@
   .lead{color:var(--mut);font-size:15.5px;max-width:560px}
 
   /* header */
-  header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(255,255,255,.92);border-bottom:2px solid var(--line);box-shadow:0 2px 16px rgba(25,66,199,.07)}
+  header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(255,255,255,.95);border-bottom:2px solid var(--blue);box-shadow:0 2px 16px rgba(25,66,199,.07)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
   .logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;letter-spacing:.01em;color:var(--ink)}
   .logo .logo-mark{width:30px;height:32px;display:block}
@@ -46,21 +46,22 @@
   .nav-cta{background:var(--blue);color:#fff;font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:999px;white-space:nowrap;box-shadow:0 4px 14px rgba(25,66,199,.28)}
 
   /* hero */
-  .hero{position:relative;padding:64px 0 56px;overflow:hidden;background:linear-gradient(160deg,#EEF4FF 0%,#F5F8FF 55%,#E8EFFE 100%);border-bottom:2px solid var(--line)}
+  .hero{position:relative;padding:64px 0 56px;overflow:hidden;background:#fff;border-bottom:2px solid var(--blue)}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 100% 0,rgba(59,106,232,.10),transparent 60%);pointer-events:none}
   .hero h1{font-size:38px;line-height:1.22;font-weight:900;letter-spacing:-.02em;position:relative;color:var(--ink)}
   .hero h1 .hl{color:var(--blue)}
   .hero p.sub{position:relative;color:var(--mut);font-size:16px;margin:18px 0 26px;max-width:520px}
   .btns{display:flex;gap:12px;flex-wrap:wrap;position:relative}
   .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:15px}
   .btn-pri{background:var(--blue);color:#fff;box-shadow:0 8px 24px rgba(25,66,199,.28)}
-  .btn-ghost{border:2px solid var(--line);color:var(--ink);background:#fff}
+  .btn-ghost{border:2px solid var(--blue);color:var(--blue);background:#fff}
   .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;position:relative}
   .chip{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--mut);background:#fff;border:1.5px solid var(--line);padding:8px 13px;border-radius:10px;box-shadow:var(--shadow2)}
   .chip b{color:var(--ink);font-weight:700}
   .tick{color:var(--blue);font-weight:900}
 
   /* trust strip */
-  .trust{background:#fff;border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+  .trust{background:#fff;border-top:2px solid var(--blue);border-bottom:2px solid var(--blue)}
   .trust .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
   .trust .cell{padding:22px 8px;border-right:1px solid var(--line)}
   .trust .cell:last-child{border-right:none}
@@ -78,7 +79,7 @@
 
   /* before/after slider */
   .ba-wrap{margin-top:28px}
-  .ba{position:relative;width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:2px solid var(--line);cursor:ew-resize;user-select:none;box-shadow:var(--shadow)}
+  .ba{position:relative;width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:2px solid var(--blue);cursor:ew-resize;user-select:none;box-shadow:var(--shadow)}
   .ba .layer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:.04em}
   .ba .after{background:linear-gradient(135deg,#dceeff,#a8c8ff);color:#0D1B3E}
   .ba .before{background:repeating-linear-gradient(45deg,#e8ddd0,#e8ddd0 14px,#ddd0c0 14px,#ddd0c0 28px);color:#5a4a38;clip-path:inset(0 50% 0 0)}
@@ -121,11 +122,11 @@
   .book .btn-pri{background:#fff;color:var(--blue);box-shadow:0 8px 24px rgba(0,0,0,.15)}
   .book p{color:rgba(255,255,255,.6)}
 
-  /* sections alternation */
-  .sec-alt{background:var(--bg2);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+  /* sections alternation — all white base */
+  .sec-alt{background:#fff;border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
   .sec-white{background:#fff}
 
-  footer{border-top:2px solid var(--line);padding:34px 0;text-align:center;color:var(--mut2);font-size:12.5px;background:#fff}
+  footer{border-top:2px solid var(--blue);padding:34px 0;text-align:center;color:var(--mut2);font-size:12.5px;background:#fff}
   footer .fl{font-weight:900;color:var(--ink);font-size:15px;margin-bottom:6px}
 
   /* floating cta */
@@ -184,9 +185,9 @@
   <div class="wrap nav">
     <div class="logo">
       <svg class="logo-mark" viewBox="0 0 200 215"><use href="#hf-shield"/></svg>
-      <span>浩峰精緻居家卍膜<small>HAOFENG · HOME COATING</small></span>
+      <span>浩峰精緻居家鍍膜<small>HAOFENG · HOME COATING</small></span>
     </div>
-    <a class="nav-cta" href="#book">LINE 鄐約</a>
+    <a class="nav-cta" href="#book">LINE 預約</a>
   </div>
 </header>
 
@@ -195,7 +196,7 @@
   <div class="wrap">
     <svg class="hero-logo" viewBox="0 0 200 215"><use href="#hf-shield"/></svg>
     <h1>讓專業<span class="hl">進你家門</span>，<br>是一件可以很<span class="hl">安心</span>的事。</h1>
-    <p class="sub">到府專業居家鍍膜 — 不璨出門，玻璃、衛浴、廚房、石材，交給帶著原廠認證材料上門的人。施工前先報價，做完有保固。</p>
+    <p class="sub">到府專業居家鍍膜 — 不用出門，玻璃、衛浴、廚房、石材，交給帶著原廠認證材料上門的人。施工前先報價，做完有保固。</p>
     <div class="btns">
       <a class="btn btn-pri" href="#book">📲 立即 LINE 預約</a>
       <a class="btn btn-ghost" href="#works">看施工前後對比</a>
@@ -295,7 +296,7 @@
 </section>
 
 <!-- BOOKING -->
-<section id="book" style="background:var(--bg2);border-top:2px solid var(--line);padding:64px 0">
+<section id="book" class="sec-white" style="border-top:2px solid var(--line);padding:64px 0">
   <div class="wrap">
     <div class="book">
       <div class="eyebrow">Booking · 立即預約</div>
