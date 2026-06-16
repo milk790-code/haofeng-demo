@@ -38,15 +38,15 @@
 
   /* header */
   header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(255,255,255,.95);border-bottom:2px solid var(--blue);box-shadow:0 2px 16px rgba(25,66,199,.07)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
-  .logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;letter-spacing:.01em;color:var(--ink)}
-  .logo .logo-mark{width:30px;height:32px;display:block}
-  .hero-logo{display:block;width:130px;height:140px;margin:0 0 20px}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:16px;letter-spacing:.01em;color:var(--ink)}
+  .logo .logo-mark{width:38px;height:38px;display:block;object-fit:contain}
+  .hero-logo{display:block;width:172px;height:172px;margin:0 0 18px;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(25,66,199,.38))}
   .logo small{display:block;font-size:10px;letter-spacing:.18em;color:var(--mut2);font-weight:500}
   .nav-cta{background:var(--blue);color:#fff;font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:999px;white-space:nowrap;box-shadow:0 4px 14px rgba(25,66,199,.28)}
 
   /* hero */
-  .hero{position:relative;padding:64px 0 56px;overflow:hidden;background:#fff;border-bottom:2px solid var(--blue)}
+  .hero{position:relative;padding:60px 0 56px;overflow:hidden;background:#fff;border-bottom:2px solid var(--blue)}
   .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 100% 0,rgba(59,106,232,.10),transparent 60%);pointer-events:none}
   .hero h1{font-size:38px;line-height:1.22;font-weight:900;letter-spacing:-.02em;position:relative;color:var(--ink)}
   .hero h1 .hl{color:var(--blue)}
@@ -122,7 +122,7 @@
   .book .btn-pri{background:#fff;color:var(--blue);box-shadow:0 8px 24px rgba(0,0,0,.15)}
   .book p{color:rgba(255,255,255,.6)}
 
-  /* sections alternation — all white base */
+  /* sections alternation — white base */
   .sec-alt{background:#fff;border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
   .sec-white{background:#fff}
 
@@ -142,6 +142,7 @@
     .trust .cell{border-right:none;border-bottom:1px solid var(--line)}
     .steps{grid-template-columns:1fr 1fr}
     .nav-cta{padding:8px 13px}
+    .hero-logo{width:140px;height:140px}
     .demo-flag{display:none}
   }
 </style>
@@ -150,41 +151,10 @@
 
 <div class="demo-flag">DEMO · 3Q 製作</div>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="hf-shield" viewBox="0 0 200 215">
-<defs>
-<linearGradient id="rim" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#4f8bff"/><stop offset=".45" stop-color="#1733a8"/><stop offset="1" stop-color="#0a1652"/></linearGradient>
-<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070b18"/><stop offset=".5" stop-color="#0c1a4a"/><stop offset="1" stop-color="#2e6bff"/></linearGradient>
-<linearGradient id="mtn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f7bff"/><stop offset="1" stop-color="#0a1f72"/></linearGradient>
-<linearGradient id="drop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb4ff"/><stop offset="1" stop-color="#0b3fd0"/></linearGradient>
-<clipPath id="inner"><path d="M100 32 L148 45 V84 Q148 114 100 135 Q52 114 52 84 V45 Z"/></clipPath>
-</defs>
-<path d="M100 10 L168 32 V88 Q168 133 100 163 Q32 133 32 88 V32 Z" fill="url(#rim)" stroke="#a8c8ff" stroke-width="1.6"/>
-<path d="M100 21 L157 39 V86 Q157 125 100 151 Q43 125 43 86 V39 Z" fill="#04060e"/>
-<path d="M100 32 L148 45 V84 Q148 114 100 135 Q52 114 52 84 V45 Z" fill="url(#sky)"/>
-<g clip-path="url(#inner)">
-<path d="M52 124 L75 78 L84 93 L100 58 L118 96 L130 80 L148 124 Z" fill="url(#mtn)"/>
-<path d="M100 58 L93 78 L99 80 L90 98 L96 100 L88 118" fill="none" stroke="#05070f" stroke-width="2.2" stroke-linejoin="round"/>
-<path d="M75 78 L81 90 L73 93" fill="none" stroke="#05070f" stroke-width="2"/>
-<path d="M100 54 l5 11 -3.5 0 5 10 -3.5 0 5 9 -14 0 5 -9 -3.5 0 5 -10 -3.5 0 z" fill="#05070f"/>
-<path d="M85 126 L100 109 L115 126 Z" fill="#05070f"/>
-<rect x="89" y="125" width="22" height="13" fill="#05070f"/>
-<rect x="96" y="128" width="8" height="8" fill="#2e6bff"/>
-<path d="M68 130 l5.5 -15 5.5 15 z" fill="#05070f"/>
-<path d="M126 130 l5 -15 5 15 z" fill="#05070f"/>
-<path d="M135 132 l4.5 -12 4.5 12 z" fill="#05070f"/>
-</g>
-<path d="M26 116 Q100 172 178 110 Q104 152 30 122 Z" fill="#05070e" stroke="#8fb4ff" stroke-width="1"/>
-<path d="M34 132 Q100 180 172 128 Q104 162 38 138 Z" fill="#0a0e1c" stroke="#5f7fbf" stroke-width=".8"/>
-<path d="M184 116 q6.5 9 0 15.5 q-6.5 -6.5 0 -15.5 z" fill="url(#drop)"/>
-<path d="M190 136 q5.5 8 0 13.5 q-5.5 -5.5 0 -13.5 z" fill="url(#drop)"/>
-<path d="M181 153 q4.5 6.5 0 11 q-4.5 -4.5 0 -11 z" fill="url(#drop)"/>
-<g fill="#d6e6ff"><path d="M58 38 l2 6.5 6.5 2 -6.5 2 -2 6.5 -2 -6.5 -6.5 -2 6.5 -2 z"/><path d="M142 38 l2 6.5 6.5 2 -6.5 2 -2 6.5 -2 -6.5 -6.5 -2 6.5 -2 z"/></g>
-</symbol></svg>
-
 <header>
   <div class="wrap nav">
     <div class="logo">
-      <svg class="logo-mark" viewBox="0 0 200 215"><use href="#hf-shield"/></svg>
+      <img class="logo-mark" src="haofeng-logo.png" alt="浩峰精緻居家鍍膜 logo">
       <span>浩峰精緻居家鍍膜<small>HAOFENG · HOME COATING</small></span>
     </div>
     <a class="nav-cta" href="#book">LINE 預約</a>
@@ -194,7 +164,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <svg class="hero-logo" viewBox="0 0 200 215"><use href="#hf-shield"/></svg>
+    <img class="hero-logo" src="haofeng-logo.png" alt="浩峰精緻居家鍍膜 logo">
     <h1>讓專業<span class="hl">進你家門</span>，<br>是一件可以很<span class="hl">安心</span>的事。</h1>
     <p class="sub">到府專業居家鍍膜 — 不用出門，玻璃、衛浴、廚房、石材，交給帶著原廠認證材料上門的人。施工前先報價，做完有保固。</p>
     <div class="btns">
